@@ -3,7 +3,7 @@
 // À faire EN PREMIER : sans lireJson et chargerDonnees, l'application ne peut rien afficher.
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-*/
+
 // Lit un fichier JSON et renvoie son contenu converti en valeur JavaScript.
 // En cas de problème, lance une erreur claire qui garde l'erreur d'origine comme cause.
 export async function lireJson(chemin) {
@@ -16,8 +16,8 @@ export async function lireJson(chemin) {
     });
   }
 }
-
-/* Lit les quatre fichiers EN MÊME TEMPS avec Promise.all.
+*/
+// Lit les quatre fichiers EN MÊME TEMPS avec Promise.all.
 // Renvoie { parcelles, cultures, releves, recoltes }.
 export async function chargerDonnees(dossier) {
   const [parcelles, cultures, releves, recoltes] =
@@ -35,7 +35,7 @@ export async function chargerDonnees(dossier) {
     recoltes,
   };
 }
-
+/*
 // Vérifie les textes tapés dans le terminal et renvoie un nouveau relevé.
 // Exemple : creerReleve('p07', '64', '29', '2026-10-29')
 //   → { parcelle: 'P07', date: '2026-10-29', humidite: 64, temperature: 29 }
