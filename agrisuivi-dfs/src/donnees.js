@@ -1,9 +1,9 @@
-// MEMBRE 4 — Données : lire et écrire les fichiers JSON de façon asynchrone.
+/* MEMBRE 4 — Données : lire et écrire les fichiers JSON de façon asynchrone.
 // Fiche : fiches/4-donnees.md · Vérifier : npm run test:donnees
 // À faire EN PREMIER : sans lireJson et chargerDonnees, l'application ne peut rien afficher.
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-/*
+*/
 // Lit un fichier JSON et renvoie son contenu converti en valeur JavaScript.
 // En cas de problème, lance une erreur claire qui garde l'erreur d'origine comme cause.
 export async function lireJson(chemin) {
@@ -17,7 +17,7 @@ export async function lireJson(chemin) {
   }
 }
 
-// Lit les quatre fichiers EN MÊME TEMPS avec Promise.all.
+/* Lit les quatre fichiers EN MÊME TEMPS avec Promise.all.
 // Renvoie { parcelles, cultures, releves, recoltes }.
 export async function chargerDonnees(dossier) {
   const [parcelles, cultures, releves, recoltes] =
