@@ -16,7 +16,7 @@ export async function lireJson(chemin) {
     });
   }
 }
-*/
+/*
 // Lit les quatre fichiers EN MÊME TEMPS avec Promise.all.
 // Renvoie { parcelles, cultures, releves, recoltes }.
 export async function chargerDonnees(dossier) {
@@ -35,7 +35,7 @@ export async function chargerDonnees(dossier) {
     recoltes,
   };
 }
-/*
+*/
 // Vérifie les textes tapés dans le terminal et renvoie un nouveau relevé.
 // Exemple : creerReleve('p07', '64', '29', '2026-10-29')
 //   → { parcelle: 'P07', date: '2026-10-29', humidite: 64, temperature: 29 }
@@ -47,7 +47,7 @@ export function creerReleve(parcelle, humiditeTexte, temperatureTexte, date) {
     temperature: Number(temperatureTexte),
   };
 }
-
+/*
 // Ajoute le relevé à la fin du fichier JSON, enregistre le fichier,
 // puis renvoie le nouveau nombre de relevés.
 export async function ajouterReleve(chemin, releve) {
