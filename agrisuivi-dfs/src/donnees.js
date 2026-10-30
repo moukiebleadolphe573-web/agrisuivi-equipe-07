@@ -3,7 +3,7 @@
 // À faire EN PREMIER : sans lireJson et chargerDonnees, l'application ne peut rien afficher.
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-
+/*
 // Lit un fichier JSON et renvoie son contenu converti en valeur JavaScript.
 // En cas de problème, lance une erreur claire qui garde l'erreur d'origine comme cause.
 export async function lireJson(chemin) {
@@ -62,4 +62,4 @@ export async function ajouterReleve(chemin, releve) {
   );
 
   return releves.length;
-}
+}*/
