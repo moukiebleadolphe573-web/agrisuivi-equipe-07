@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AgriSuivi — mini-projet d'équipe
 
 ## Le scénario
@@ -164,3 +165,6 @@ La date de la première ligne est celle du jour. Le formateur testera aussi votr
 | Membre 2 — Irrigation |               |               |
 | Membre 3 — Récoltes   |               |               |
 | Membre 4 — Données    |               |               |
+=======
+ 
+>>>>>>> 311e185812d379d8a054f7ec7616076e1cbe4d60
