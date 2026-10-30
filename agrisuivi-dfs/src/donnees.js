@@ -11,3 +11,19 @@ export async function lireJson(chemin) {
     });
   }
 }
+export async function chargerDonnees(dossier) {
+  const [parcelles, cultures, releves, recoltes] =
+    await Promise.all([
+      lireJson(join(dossier, "parcelles.json")),
+      lireJson(join(dossier, "cultures.json")),
+      lireJson(join(dossier, "releves.json")),
+      lireJson(join(dossier, "recoltes.json")),
+    ]);
+
+  return {
+    parcelles,
+    cultures,
+    releves,
+    recoltes,
+  };
+}
