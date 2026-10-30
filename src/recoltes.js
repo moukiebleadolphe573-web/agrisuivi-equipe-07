@@ -3,8 +3,12 @@
 
 // Renvoie le total des kilos récoltés sur une parcelle. Aucune récolte : 0.
 export function totalRecolte(recoltes, idParcelle) {
-  throw new Error("TODO Membre 3 : coder totalRecolte dans src/recoltes.js");
+return recoltes
+    .filter((recolte) => recolte.parcelle === idParcelle)
+    .reduce((total, recolte) => total + recolte.kg, 0);
 }
+     /* 
+    
 
 // Renvoie le rendement en kg par hectare, arrondi à l'entier le plus proche.
 // Une surface nulle ou négative est une erreur : on lance une RangeError.
@@ -29,4 +33,4 @@ export function classerParRevenu(bilan) {
   throw new Error(
     "TODO Membre 3 : coder classerParRevenu dans src/recoltes.js",
   );
-}
+}/*
