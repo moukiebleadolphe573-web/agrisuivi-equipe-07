@@ -6,7 +6,7 @@ export function totalRecolte(recoltes, idParcelle) {
 return recoltes
     .filter((recolte) => recolte.parcelle === idParcelle)
     .reduce((total, recolte) => total + recolte.kg, 0);
-}**/
+}
      
     
 
@@ -18,17 +18,20 @@ export function rendement(kg, surface) {
   }
   return Math.round(kg / surface);
 }
+*/
+
   
     
   
 
 
-/*
+
 // Renvoie le revenu estimé en FCFA.
 export function revenu(kg, prixKg) {
   throw new Error("TODO Membre 3 : coder revenu dans src/recoltes.js");
+return kg * prixKg;
 }
-
+/*
 // Renvoie une ligne de bilan par parcelle, dans le même ordre que parcelles.
 // Chaque ligne : { id, producteur, culture, kg, rendement, revenu }
 export function bilanRecoltes(parcelles, recoltes, cultures) {
