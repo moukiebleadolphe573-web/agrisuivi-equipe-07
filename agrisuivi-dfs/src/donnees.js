@@ -27,3 +27,11 @@ export async function chargerDonnees(dossier) {
     recoltes,
   };
 }
+export function creerReleve(parcelle, humiditeTexte, temperatureTexte, date) {
+  return {
+    parcelle: parcelle.toUpperCase(),
+    date,
+    humidite: Number(humiditeTexte),
+    temperature: Number(temperatureTexte),
+  };
+}
