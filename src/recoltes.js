@@ -10,3 +10,6 @@ export function rendement(kg, surface) {
   }
   return Math.round(kg / surface);
 }
+export function revenu(kg, prixKg) {
+  return kg * prixKg;
+}
