@@ -5,10 +5,8 @@ export async function lireJson(chemin) {
   try {
     const contenu = await readFile(chemin, "utf-8");
     return JSON.parse(contenu);
-  } catch (error) {
-    throw new Error("Impossible de lire le fichier JSON", {
-      cause: error,
-    });
+  } catch (erreur)  {
+    throw new Error(`Impossible de lire ${chemin}`, { cause: erreur })
   }
 }
 export async function chargerDonnees(dossier) {
@@ -27,6 +25,7 @@ export async function chargerDonnees(dossier) {
     recoltes,
   };
 }
+
 export function creerReleve(parcelle, humiditeTexte, temperatureTexte, date) {
   return {
     parcelle: parcelle.toUpperCase(),
