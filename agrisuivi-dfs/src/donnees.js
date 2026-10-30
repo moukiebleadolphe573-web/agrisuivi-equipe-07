@@ -35,3 +35,17 @@ export function creerReleve(parcelle, humiditeTexte, temperatureTexte, date) {
     temperature: Number(temperatureTexte),
   };
 }
+
+export async function ajouterReleve(chemin, releve) {
+  const releves = await lireJson(chemin);
+
+  releves.push(releve);
+
+  await writeFile(
+    chemin,
+    JSON.stringify(releves, null, 2),
+    "utf-8"
+  );
+
+  return releves.length;
+}
